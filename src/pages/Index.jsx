@@ -1,5 +1,5 @@
 import React from "react";
-import { ChakraProvider, Box, Text, VStack, Heading, extendTheme, CSSReset } from "@chakra-ui/react";
+import { ChakraProvider, Box, Text, VStack, Heading, extendTheme, CSSReset, Flex } from "@chakra-ui/react";
 import { ColorModeScript } from "@chakra-ui/react";
 import { FaMonument } from "react-icons/fa";
 
@@ -29,16 +29,22 @@ const Index = () => {
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode="dark" />
       <CSSReset />
-      <Box bg="darkBlue.500" w="100%" p={4} color="white" minHeight="100vh">
-        <VStack>
-          <Heading as="h1" size="2xl" letterSpacing={"tighter"}>
-            Karier Karel Pamyatnik
-          </Heading>
-          <Text fontSize="xl" p={2}>
-            Explore the legacy of Karel's monuments
-          </Text>
-        </VStack>
-      </Box>
+      <Flex>
+        <Box width="250px" bg="gray.800" height="100vh" p={4} color="white">
+          <Text mb="4">Menu</Text>
+          {}
+        </Box>
+        <Box bg="darkBlue.500" w="100%" p={4} color="white" minHeight="100vh">
+          <VStack>
+            <Heading as="h1" size="2xl" letterSpacing={"tighter"}>
+              Karier Karel Pamyatnik
+            </Heading>
+            <Text fontSize="xl" p={2}>
+              Explore the legacy of Karel's monuments
+            </Text>
+          </VStack>
+        </Box>
+      </Flex>
     </ChakraProvider>
   );
 };
