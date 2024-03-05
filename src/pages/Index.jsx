@@ -1,11 +1,6 @@
 import React from "react";
-import { ChakraProvider, Box, Text, VStack, Heading, extendTheme, CSSReset, Flex, Button } from "@chakra-ui/react";
-
-const SidebarButton = ({ label }) => (
-  <Button w="100%" mb={2}>
-    {label}
-  </Button>
-);
+import { ChakraProvider, Box, Text, VStack, Heading, extendTheme, CSSReset, Flex } from "@chakra-ui/react";
+import SidebarButton from "../components/SidebarButton";
 import { ColorModeScript } from "@chakra-ui/react";
 import { FaMonument } from "react-icons/fa";
 
@@ -48,19 +43,40 @@ const Index = () => {
           <SidebarButton label="Директор" />
           <SidebarButton label="Хозяин" />
           <SidebarButton label="Клиент" />
-          {}
         </Box>
-        <Box bg="darkBlue.500" w="100%" p={4} color="white" minHeight="100vh">
-          <VStack>
-            <Heading as="h1" size="2xl" letterSpacing={"tighter"}>
-              Karier Karel Pamyatnik
-            </Heading>
-            <Text fontSize="xl" p={2}>
-              Explore the legacy of Karel's monuments
-            </Text>
-          </VStack>
-        </Box>
+        <Flex direction="column" minHeight="100vh">
+          <Flex justifyContent="space-between" bg="gray.800" p={4}>
+            <SidebarButton label="Склад" />
+            <SidebarButton label="Архив" />
+            <SidebarButton label="Архив рекламаций" />
+            <SidebarButton label="Мастер" />
+            <SidebarButton label="Начальник карьера" />
+            <SidebarButton label="Менеджер" />
+            <SidebarButton label="Цербер" />
+            <SidebarButton label="Директор" />
+            <SidebarButton label="Хозяин" />
+            <SidebarButton label="Клиент" />
+          </Flex>
+          <Box bg="darkBlue.500" w="100%" p={4} color="white">
+            <VStack>
+              <Heading as="h1" size="2xl" letterSpacing={"tighter"}>
+                Karier Karel Pamyatnik
+              </Heading>
+              <Text fontSize="xl" p={2}>
+                Explore the legacy of Karel's monuments
+              </Text>
+            </VStack>
+          </Box>
+        </Flex>
       </Flex>
+      <VStack>
+        <Heading as="h1" size="2xl" letterSpacing={"tighter"}>
+          Karier Karel Pamyatnik
+        </Heading>
+        <Text fontSize="xl" p={2}>
+          Explore the legacy of Karel's monuments
+        </Text>
+      </VStack>
     </ChakraProvider>
   );
 };
