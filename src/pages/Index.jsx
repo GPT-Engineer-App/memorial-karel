@@ -31,7 +31,7 @@ const Index = () => {
       <CSSReset />
       <Flex>
         <Box width="250px" bg="gray.800" height="100vh" p={4} color="white">
-          <Text mb="4">Menu</Text>
+          <Text mb="4">КонртКарьер</Text>
           {}
         </Box>
         <Box bg="darkBlue.500" w="100%" p={4} color="white" minHeight="100vh">
