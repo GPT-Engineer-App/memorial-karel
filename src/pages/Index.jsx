@@ -46,16 +46,7 @@ const Index = () => {
         </Box>
         <Flex direction="column" minHeight="100vh">
           <Flex justifyContent="space-between" bg="gray.800" p={4}>
-            <SidebarButton label="Склад" />
-            <SidebarButton label="Архив" />
-            <SidebarButton label="Архив рекламаций" />
-            <SidebarButton label="Мастер" />
-            <SidebarButton label="Начальник карьера" />
-            <SidebarButton label="Менеджер" />
-            <SidebarButton label="Цербер" />
-            <SidebarButton label="Директор" />
-            <SidebarButton label="Хозяин" />
-            <SidebarButton label="Клиент" />
+            {}
           </Flex>
           <Box bg="darkBlue.500" w="100%" p={4} color="white">
             <VStack>
