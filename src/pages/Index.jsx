@@ -45,7 +45,7 @@ const Index = () => {
           <SidebarButton label="Клиент" />
         </Box>
         <Flex direction="column" minHeight="100vh">
-          <Flex justifyContent="space-between" bg="gray.800" p={4}>
+          <Flex justifyContent="space-between" bg="gray.800" p={4} width="100%" height="20">
             {}
           </Flex>
           <Box bg="darkBlue.500" w="100%" p={4} color="white">
