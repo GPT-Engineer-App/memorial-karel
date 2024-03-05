@@ -31,7 +31,6 @@ const Index = () => {
       <CSSReset />
       <Box bg="darkBlue.500" w="100%" p={4} color="white" minHeight="100vh">
         <VStack>
-          <FaMonument size="3em" />
           <Heading as="h1" size="2xl" letterSpacing={"tighter"}>
             Karier Karel Pamyatnik
           </Heading>
